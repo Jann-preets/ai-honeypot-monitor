@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal Admin Portal | Secure Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>🔒 Security Gateway</h2>
+        <p>Restricted Access - Employees Only</p>
+        <form action="http://localhost:8000/capture" method="POST">
+            <input type="text" name="username" placeholder="Employee ID / Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            
+            <input type="text" name="fax_number" class="hidden-field" tabindex="-1" autocomplete="off">
+            
+            <button type="submit">Login</button>
+        </form>
+        <div class="footer">IP Logging is active for security auditing.</div>
+    </div>
+</body>
+</html>
